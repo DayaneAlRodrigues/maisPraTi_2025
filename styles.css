@@ -20,7 +20,9 @@
 body {
     background-color: var(--color);
 }
-
+header {
+    background-image:linear-gradient(50deg, var(--color-quartenaria), var(--color-hover));
+}
 .container {
     width: 100%;
     display: flex;
@@ -30,21 +32,21 @@ body {
    
 }
 
-.logo{
-    width: 15%;
-    height: auto;
-    left: 2rem;
+.title {
+    font-size: 1rem;
+    color: var(--color-secundaria);
+    padding: 1rem 1rem 1rem 1rem;
+    
 }
 
 .nav {
     display: flex;
     justify-content: flex-end;
-    padding: 0 6rem 2rem 0;
+    padding: 2rem 4rem 2rem 2rem;
 }
 .nav ul {
     display: flex;
-    list-style-type: none;
-    
+    list-style-type: none;    
 }
 
 .nav li +li {
@@ -57,5 +59,34 @@ body {
 }
 
 .nav a:hover {
-    color: var(--color-hover);
+    color: var(--color-quartenaria);
+}
+
+.logo {
+    width: 70%;
+    height: auto;
+}
+
+.banner {
+    display: grid;
+    place-items: center; /* Atalho para justify-items: center; e align-items: center; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.container_banner {
+    padding: 0 1rem 0 4rem;
+    color: var(--color-secundaria);
+  
+  
+}
+
+.container_banner h2 {
+    margin-bottom: 1rem; 
+}
+
+.container_banner p {
+    line-height: 1.6; 
 }
