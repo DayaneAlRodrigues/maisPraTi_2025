@@ -51,17 +51,10 @@
             <p>Se eu tivesse que me descrever em poucas palavras, diria que sou uma mineira, antropóloga, mãe e, acima de tudo, uma entusiasta do desenvolvimento de software. 
                 Minha jornada é uma mistura de paixões, e a programação tem se revelado uma das mais empolgantes!</p>
     
-            <p> Minha trajetória acadêmica me deu uma base sólida em projetos back-end, banco de dados e front-end, explorando tecnologias como Java, SQL, Oracle, JavaScript, HTML e CSS.</p>
-                
-            <p> Atualmente, estou aprimorando minhas habilidades full stack no projeto Dev. Full Stack Jr. da +praTi & Codifica, construindo soluções que não só funcionam, mas também me preparam para os desafios do mundo real. E para coroar essa jornada, estou desenvolvendo meu projeto de conclusão de curso: um sistema full stack de catálogo bibliotecário. É a minha forma de consolidar tudo que aprendi e construir um portfólio que mostre minha dedicação.</p>
-                
-            <p> Me considero uma profissional autodidata, com facilidade de aprendizado, adaptabilidade e resiliência. Estou sempre em busca de novos desafios que me impulsionem a crescer na área de tecnologia e muito animada para ingressar no mercado como Desenvolvedora de Software Júnior.</p>
-                
-             
+            <p> Minha trajetória acadêmica e juntamente com a formação full stack no projeto Dev. Full Stack Jr. da +praTi & Codifica, me ajudaram à construir soluções que não só funcionam, mas também me preparam para os desafios do mundo real. E para coroar essa jornada, estou desenvolvendo o projeto final do curso Dev. Full Stack Junior e meu projeto de conclusão de curso em Análise e Desenvolvimento de Sistemas. Ambos os projetos são full stack e serão fundamentais para a conquista da minha almejada vaga de trabalho.</p>
+            <p> Me considero uma profissional autodidata, com facilidade de aprendizado, adaptabilidade e resiliência. Estou sempre em busca de novos desafios que me impulsionem a crescer na área de tecnologia e muito animada para ingressar no mercado como Desenvolvedora de Software Júnior.</p>  
 
         </div>
-    
-        
     </section>
 
     <section id="skills" >
@@ -105,9 +98,8 @@
     </section>
 
     <section id="proj">
-        <h2>Meus projetos</h2>
-        <div class="skills_grid">
-            <div class="skills_category">
+        <div class="proj_carousel">
+            <div class="carousel_slide">
                 
                 <a href="https://github.com/DayaneAlRodrigues/maisPraTI-2025-01/tree/main/2-Front-End-Basics/Dayane/my" target="_blank">
                     
@@ -116,28 +108,28 @@
                     
                 </a>
 
-            </div>
-            <div class="skills_category">
                 
                 <a href="https://dayanealrodrigues.github.io/mensagem-secreta-criptografia/" target="_blank"> 
                     <img src="./assets/proj2.png" alt="criptografia">
                     <h3 >Criptografia</h3>
                     
                 </a>
-            </div>
-            <div class="skills_category">
                 
                 <a href="https://dayanealrodrigues.github.io/Memory-Game/" target="_blank">
                     <img src="./assets/proj3.png" alt="jogo de memoria">
                     <h3>Memory Game</h3>
                 </a>
-            </div>
-            <div class="skills_category">
                 
                 <a href="https://github.com/DayaneAlRodrigues/app-calculadora" target="_blank">
                     <img src="./assets/proj4.png" alt="calculadora">
                 <h3>Calculadora</h3>
                 </a>
+            </div>
+
+            <button class="prev-btn">❮</button>
+            <button class="next-btn">❯</button>
+
+            <div class="carousel-dots">
             </div>
             
         </div>
@@ -145,12 +137,15 @@
     <section id="contact">
         <div class="container form" >
             <h2>Fale Comigo</h2>
-            <form class="form__contact">
-                <input class="input" type="text" id="name" name="name" placeholder="Nome">
-                <input class="input" type="email" id="email" name="email" placeholder="Email">
-                <input class="input" type="number" id="whats" name="whats" placeholder="Whatsapp">
+            <form class="form__contact" id="form" action="https://formsubmit.co/dayanealrodrigues@gmail.com" method="POST">
+                <input class="input required" type="text" id="name" name="name" placeholder="Nome" oninput="nameValidate()">
+                <span class="span">Nome deve ter no mínimo 3 caracteres</span>
+                <input class="input required" type="email" id="email" name="email" placeholder="Email" oninput="emailValidate()">
+                <span class="span">Email inválido</span>
+                <input class="input required" type="number" id="whats" name="whats" placeholder="Whatsapp" oninput="foneValidate()">
+                <span class="span">Digite o número com DDD,sem espaços ou caracteres especiais</span>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Envie uma mensagem"></textarea>
-                <input class="button" type="submit">
+                <input id="submit" class="button" type="submit">
 
             </form>
         </div>

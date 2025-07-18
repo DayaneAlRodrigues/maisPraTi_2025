@@ -99,6 +99,9 @@ header {
     line-height: 1.6; 
 }
 
+.container_banner a{
+    color: var(--color-secundaria);
+}
 .social {
     margin-top: 1rem;
 }
@@ -170,6 +173,10 @@ header {
     text-align: center; 
 }
 
+.skills_category a {
+    text-decoration: none;
+}
+
 .skills_category ul {
     list-style: none; 
     padding: 0;
@@ -178,7 +185,7 @@ header {
 
 .skills_category li {
     padding: 0.5rem 0;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.1); /* Linha tracejada suave */ 
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1); 
 }
 .skills_category li:last-child {
     border-bottom: none; 
@@ -192,7 +199,90 @@ header {
     width: 100%;
     height: auto;
 }
+#proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.proj_carousel {
+    position: relative;
+    width: 600px; 
+    height: 400px; 
+    overflow: hidden; 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+}
+.carousel_slide {
+    display: flex; 
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out; 
+}
 
+.carousel_slide img {
+    min-width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+.carousel-slide img {
+    min-width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-primaria);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 10; 
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-primaria);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dot.active {
+    background-color: var(--color-secundaria); 
+    border-color: var(--color-secundaria);
+    transform: scale(1.2);
+}
 .form {
     flex-direction: column;
     margin-top: 4rem;
@@ -206,6 +296,12 @@ header {
 .form__contact {
     display: flex;
     flex-direction: column;
+}
+
+.form__contact span {
+    display: none;
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .input, textarea {
