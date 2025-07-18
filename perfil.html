@@ -5,41 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+
     <title>Perfil</title>
 </head>
 <body>
     <header class="container">
          <h1 class="title">DR</h1>
+        <button id="menu_hamburguer"><i class="fa-solid fa-bars"></i></button>
         <div class="container__nav">
             <nav class="nav" id="navMenu">
                 <ul>
-                    <li><a href="#about"> <img class="icon" src="./assets/person_heart_24dp_5C4676_FILL0_wght400_GRAD0_opsz24.svg" alt="person icon">About Me</a></li>
-                    <li><a href="#skills"><img class="icon" src="./assets/code_24dp_5C4676_FILL0_wght400_GRAD0_opsz24.svg" alt="code icon">Skills</a></li>
-                    <li><a href="#proj"><img class="icon" src="./assets/folder_code_24dp_5C4676_FILL0_wght400_GRAD0_opsz24.svg" alt="folder code">Projects</a></li>
-                    <li><a href="#contact"><img class="icon" src="./assets/contact_page_24dp_5C4676_FILL0_wght400_GRAD0_opsz24.svg" alt="icon contact page">Contact</a></li>
+                    <li><a href="#about"> <i class="fa-solid fa-person-falling"></i></i>About Me</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-code"></i>Skills</a></li>
+                    <li><a href="#proj"><i class="fa-solid fa-file-code"></i>Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-terminal"></i>Contact</a></li>
+
                 </ul>
             </nav>
         </div>
+        
     </header>
     <section class=" banner">
         
         <div class="container_banner">
             <h2>Olá, eu sou Dayane Rodrigues</h2>
             <p>Seja bem-vindo(a) ao meu espaço! Sou desenvolvedora de software e criei este site para compartilhar um pouco do meu trabalho e paixão por transformar ideias em realidade através do código. Explore e sinta-se à vontade para entrar em contato!</p>
-            <div>
-                <a href="https://github.com/DayaneAlRodrigues" target="__blank">
-                github
-                </a>
-                <a href="https://www.linkedin.com/in/dayane-de-almeida-rodrigues-067063219/"  target="__blank">
-                linkedin
-                </a>
-    
-    
+            <div class="social">
+                <a href="./assets/cv.pdf" target="_blank"><i class="fa-solid fa-download"></i>CV</a> 
+                <a href="https://github.com/DayaneAlRodrigues" target="_blank"><i class="fa-brands fa-github "></i></a>
+                <a href="https://www.linkedin.com/in/dayane-de-almeida-rodrigues/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#contact">Fale comigo <i class="fa-solid fa-terminal"></i></a>
             </div>
         </div>
         <img class="logo" src="./assets/logo2.png" alt="logo Dayane Rodrigues">
     </section>
-
+    
     <section id="about" class="container">
         <div>
             <h2>Sobre Mim</h2>
@@ -52,7 +57,8 @@
                 
             <p> Me considero uma profissional autodidata, com facilidade de aprendizado, adaptabilidade e resiliência. Estou sempre em busca de novos desafios que me impulsionem a crescer na área de tecnologia e muito animada para ingressar no mercado como Desenvolvedora de Software Júnior.</p>
                 
-            <a>Vamos trocar uma ideia?</a>  
+             
+
         </div>
     
         
@@ -65,34 +71,34 @@
             <div class="skills_category">
                 <h3>Linguagens de programação</h3>
                 <ul>
-                    <li>JavaScript</li>
-                    <li>Java</li>
+                    <li> <i class="fa-brands fa-js"></i>JavaScript</li>
+                    <li> <i class="fa-brands fa-java"></i>Java</li>
                 </ul>
             </div>
 
             <div class="skills_category">
                 <h3>Front-end</h3>
                 <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>React</li>
+                    <li> <i class="fa-brands fa-html5"></i>HTML5</li>
+                    <li><i class="fa-brands fa-css"></i>CSS3 </li>
+                    <li><i class="fa-brands fa-react"></i>React</li>
                 </ul>
             </div>
 
             <div class="skills_category">
                 <h3>Back-end</h3>
                 <ul>
-                    <li>SQL</li>
-                    <li>Spring boot</li>
+                    <li><i class="fa-solid fa-database"></i> SQL</li>
+                    <li><i class="fa-solid fa-laptop-code"></i>Spring boot</li>
                 </ul>
             </div>
 
             <div class="skills_category">
                 <h3>Ferramentas & outros</h3>
                 <ul>
-                    <li>Git</li>
-                    <li>Figma</li>
-                    <li>Metodologias Ágeis</li>
+                    <li><i class="fa-brands fa-git-alt"></i>Git</li>
+                    <li><i class="fa-brands fa-figma"></i>Figma</li>
+                    <li><i class="fa-regular fa-sitemap"></i>Metodologias Ágeis</li>
                 </ul>
             </div>
         </div>
@@ -102,30 +108,67 @@
         <h2>Meus projetos</h2>
         <div class="skills_grid">
             <div class="skills_category">
-                <img src="./assets/proj1.png" alt="site de brecho">
-                <h3>Brechozin</h3>
-                <a href="https://github.com/DayaneAlRodrigues/maisPraTI-2025-01/tree/main/2-Front-End-Basics/Dayane/my">Veja</a>
+                
+                <a href="https://github.com/DayaneAlRodrigues/maisPraTI-2025-01/tree/main/2-Front-End-Basics/Dayane/my" target="_blank">
+                    
+                    <img src="./assets/proj1.png" alt="site de brecho">
+                    <h3>Brechozin</h3>
+                    
+                </a>
 
             </div>
             <div class="skills_category">
-                <img src="./assets/proj2.png" alt="criptografia">
-                <h3 >Criptografia</h3>
-                <a href="https://dayanealrodrigues.github.io/mensagem-secreta-criptografia/"> Veja!</a>
+                
+                <a href="https://dayanealrodrigues.github.io/mensagem-secreta-criptografia/" target="_blank"> 
+                    <img src="./assets/proj2.png" alt="criptografia">
+                    <h3 >Criptografia</h3>
+                    
+                </a>
             </div>
             <div class="skills_category">
-                <img src="./assets/proj3.png" alt="jogo de memoria">
-                <h3>Memory Game</h3>
-                <a href="https://dayanealrodrigues.github.io/Memory-Game/">Veja!</a>
+                
+                <a href="https://dayanealrodrigues.github.io/Memory-Game/" target="_blank">
+                    <img src="./assets/proj3.png" alt="jogo de memoria">
+                    <h3>Memory Game</h3>
+                </a>
             </div>
             <div class="skills_category">
-                <img src="./assets/proj4.png" alt="calculadora">
+                
+                <a href="https://github.com/DayaneAlRodrigues/app-calculadora" target="_blank">
+                    <img src="./assets/proj4.png" alt="calculadora">
                 <h3>Calculadora</h3>
-                <a href="https://github.com/DayaneAlRodrigues/app-calculadora">Veja!</a>
+                </a>
             </div>
             
         </div>
     </section>
+    <section id="contact">
+        <div class="container form" >
+            <h2>Fale Comigo</h2>
+            <form class="form__contact">
+                <input class="input" type="text" id="name" name="name" placeholder="Nome">
+                <input class="input" type="email" id="email" name="email" placeholder="Email">
+                <input class="input" type="number" id="whats" name="whats" placeholder="Whatsapp">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Envie uma mensagem"></textarea>
+                <input class="button" type="submit">
+
+            </form>
+        </div>
+        
+    </section>
+
+    <div>
+        <i class="fa-solid fa-arrow-up" id="arrow_up"></i>
+    </div>
     
+    <footer>
+        <p><i class="fa-regular fa-copyright"></i>  Desenvolvido por Dayane Rodrigues</p>
+        <a href="https://github.com/DayaneAlRodrigues"><i class="fa-brands fa-github "></i></a>
+        <a href="https://www.linkedin.com/in/dayane-de-almeida-rodrigues/"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c0562e00cc.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
     
 </body>
 </html>
