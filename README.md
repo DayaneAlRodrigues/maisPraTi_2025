@@ -1,9 +1,4 @@
-# Exercícios Avaliativos do Projeto Full Stack Junior
-Este repositório foi criado com o objetivo de versionar as atividades avaliativas do curso.
-
----
-
-## Atividade 4: Página de Perfil Pessoal
+# Atividade 4: Página de Perfil Pessoal
 Este projeto consiste na criação de uma página pessoal com o objetivo de praticar os conceitos básicos do **front-end**, como:
 
 * Utilização de **tags semânticas no HTML**
